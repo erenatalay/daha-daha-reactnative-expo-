@@ -1,4 +1,4 @@
-# LCRN03 - Daha Daha Case
+Daha Daha Case
 
 ## İnstallation
 1-) Node.js
