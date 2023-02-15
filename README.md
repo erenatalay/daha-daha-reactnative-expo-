@@ -14,11 +14,11 @@
 
 
 Not Auth:
-![](https://www.hizliresim.com/1627ee8) 
+![](https://i.hizliresim.com/1627ee8.png) 
 
 Auth:
-![](https://www.hizliresim.com/70803o8) 
+![](https://i.hizliresim.com/70803o8.png) 
 
 Detail:
-![](https://www.hizliresim.com/jarualk) 
+![](https://i.hizliresim.com/jarualk.png) 
 
