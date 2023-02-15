@@ -5,11 +5,11 @@ Daha Daha Case
 2-) React native (Expo) https://docs.expo.dev/get-started/installation/
 
 ## Project Run
-1-)  if you are using android (npm run android || expo start --android)
+1-)  if you are using android (npm run android || expo start --android)\
 2-)  if you are using ios (npm run ios || expo start --ios)
 
 ## In-app Screenshot
-1-)  if you are using android (npm run android || expo start --android)
+1-)  if you are using android (npm run android || expo start --android)\
 2-)  if you are using ios (npm run ios || expo start --ios)
 
 
