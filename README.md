@@ -1,7 +1,7 @@
 Daha Daha Case
 
 ## İnstallation
-1-) Node.js
+1-) Node.js\
 2-) React native (Expo) https://docs.expo.dev/get-started/installation/
 
 ## Project Run
