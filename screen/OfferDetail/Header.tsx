@@ -10,10 +10,8 @@ interface IHeader {
 }
 const Header: FC<IHeader> = (props) => {
     const { promationDetail } = props;
-    const { loading } = useSelector((state: ApplicationState) => state.mainReducer)
-
     return (
-        !loading &&  <View style={styles.container}>
+        <View style={styles.container}>
             <ImageBackground source={{ uri: promationDetail.ImageUrl }} style={styles.imageContainer} imageStyle={[styles.image]}>
                 <Image source={{ uri: promationDetail.BrandIconUrl }} style={styles.icon} />
                 <Text style={styles.tag}>{promationDetail.RemainingText}</Text>
@@ -43,7 +41,7 @@ const styles = StyleSheet.create({
         height: 300,
         justifyContent: "center",
         borderBottomLeftRadius: 120,
-        resizeMode : "contain"
+        resizeMode: "contain"
     },
     more: {
         fontWeight: "700",

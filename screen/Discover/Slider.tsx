@@ -65,11 +65,11 @@ const styles = StyleSheet.create({
     container: {
         paddingVertical : 20,
         paddingHorizontal: 10,
-        justifyContent : "center",
+        justifyContent : "center",  
         alignItems : "center",
     },
     slider : {
-        marginBottom : 20
+        marginVertical : 10
     }
 
 })

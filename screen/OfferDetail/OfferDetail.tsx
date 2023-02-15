@@ -39,7 +39,7 @@ const OfferDetail: FC<IOfferDetail> = (props) => {
         <Text style={styles.content}>
           {removeHtmlCharacter(promationDetail.Description)}
         </Text>
-        <View style={{paddingHorizontal : 10}}>
+        <View style={{ paddingHorizontal: 10 }}>
           <RenderHtml
             contentWidth={width}
             source={source}
@@ -81,16 +81,17 @@ const styles = StyleSheet.create({
     fontWeight: "700"
   },
   backContainer: {
-    backgroundColor: "#1D1E1C",
-    zIndex : 10
-  },
-  back: {
     position: "absolute",
-    top: 25,
+    top: 80,
     left: 10,
     backgroundColor: "#1D1E1C",
-    padding: 10,
-    borderRadius: 100
+    zIndex: 10,
+    borderRadius: 100,
+    padding : 10
+  },
+  back: {
+
+
   }
 })
 export default OfferDetail;

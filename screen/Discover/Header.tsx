@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "space-between",
         paddingHorizontal: 15,
-        paddingVertical: 40
+        paddingVertical: 30
     },
     authAction: {
         flexDirection: "row",

@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { View, StyleSheet, Image, ImageBackground, Text, TouchableOpacity } from "react-native"
+import { View, StyleSheet, Image, ImageBackground, Text, TouchableOpacity, Platform } from "react-native"
 import { COLORS } from '../../constants/Colors'
 import { Slides } from '../../interface/Slides'
 import { useNavigation } from "@react-navigation/native";
@@ -40,7 +40,7 @@ const OnBoardingItem: FC<IOnBoardingItem> = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        borderWidth: 2,
+        borderWidth: 3,
         borderColor: "#F4F6F5",
         padding: 10,
         borderRadius: 20,
@@ -48,10 +48,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginHorizontal: 15,
         backgroundColor: '#fff',
-        shadowColor: '#000',
-        shadowOpacity: 11,
+        shadowColor: Platform.OS === "android" ? '#000' : "transparent",
+        shadowOpacity: 1,
         shadowRadius: 4,
-        elevation: 4,
+        elevation: 2,
     },
     cardContainer: {
         backgroundColor: COLORS.white

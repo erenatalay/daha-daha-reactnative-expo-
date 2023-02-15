@@ -61,7 +61,7 @@ const MainPageNavigator = () => {
                     borderTopRightRadius: 20,
                     backgroundColor: "white",
                     height : 68,
-                    paddingBottom : 10
+                    paddingBottom : 20
                 }
             }}
         >
