@@ -13,12 +13,12 @@
 2-)  if you are using ios (npm run ios || expo start --ios)
 
 
-Not Auth:
+#Not Auth:
 ![](https://i.hizliresim.com/1627ee8.png) 
 
-Auth:
+#Auth:
 ![](https://i.hizliresim.com/70803o8.png) 
 
-Detail:
+#Detail:
 ![](https://i.hizliresim.com/jarualk.png) 
 
