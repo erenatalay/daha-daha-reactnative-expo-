@@ -16,13 +16,9 @@ interface IOfferDetail {
   route: Route
 }
 const OfferDetail: FC<IOfferDetail> = (props) => {
-  const { id } = props.route.params
   const { promationDetail } = useSelector((state: ApplicationState) => state.promationStore)
-  const dispatch = useDispatch<any>()
   const { width } = useWindowDimensions();
-  useEffect(() => {
-    dispatch(PromationSlice.getPromationDetail(id))
-  }, [])
+
   const source = {
     html: promationDetail.Description
   };

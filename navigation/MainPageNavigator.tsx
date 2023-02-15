@@ -8,8 +8,12 @@ import { COLORS } from '../constants/Colors';
 import PortalNavigation from './PortalNavigation';
 import { Portal } from '../components/icons';
 import MoreWalletNavigator from './MoreWalletNavigator';
+import Loading from '../components/Loading';
+import { useSelector } from "react-redux";
+import { ApplicationState } from "../redux/ReduxStore";
 const Tab = createBottomTabNavigator();
 const MainPageNavigator = () => {
+    const { loading } = useSelector((state: ApplicationState) => state.mainReducer)
     const icons = {
         discover: (props: any) => {
             const isSelected = props.accessibilityState.selected;
@@ -48,7 +52,9 @@ const MainPageNavigator = () => {
     }
 
     return (
-        <Tab.Navigator
+        <>
+         <Loading loading={loading} />
+         <Tab.Navigator
             screenOptions={{
                 tabBarStyle: {
                     borderTopLeftRadius: 20,
@@ -76,6 +82,8 @@ const MainPageNavigator = () => {
             />
 
         </Tab.Navigator>
+        </>
+
 
     );
 }

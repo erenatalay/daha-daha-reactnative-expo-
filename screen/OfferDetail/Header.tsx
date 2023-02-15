@@ -3,13 +3,17 @@ import { View, StyleSheet, Image, ImageBackground, Text, TouchableOpacity } from
 import { COLORS } from '../../constants/Colors'
 import { OfferDetail } from '../../interface/OfferDetail';
 import { removeHtmlCharacter } from '../../helpers';
+import { useSelector } from "react-redux";
+import { ApplicationState } from '../../redux/ReduxStore';
 interface IHeader {
     promationDetail: OfferDetail
 }
 const Header: FC<IHeader> = (props) => {
     const { promationDetail } = props;
+    const { loading } = useSelector((state: ApplicationState) => state.mainReducer)
+
     return (
-        <View style={styles.container}>
+        !loading &&  <View style={styles.container}>
             <ImageBackground source={{ uri: promationDetail.ImageUrl }} style={styles.imageContainer} imageStyle={[styles.image]}>
                 <Image source={{ uri: promationDetail.BrandIconUrl }} style={styles.icon} />
                 <Text style={styles.tag}>{promationDetail.RemainingText}</Text>
@@ -38,7 +42,8 @@ const styles = StyleSheet.create({
         width: "100%",
         height: 300,
         justifyContent: "center",
-        borderBottomLeftRadius: 120
+        borderBottomLeftRadius: 120,
+        resizeMode : "contain"
     },
     more: {
         fontWeight: "700",
